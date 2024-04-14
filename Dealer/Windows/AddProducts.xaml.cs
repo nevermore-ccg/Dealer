@@ -26,7 +26,7 @@ namespace Dealer.Окна
     public partial class AddProducts : Window
     {
         User user = new User();
-        static string ImagePath = System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName,
+        static string imagePath = System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName,
             @"Resources\Pictures\back_pic.png");
 
         public AddProducts(User currentUser)
@@ -38,7 +38,7 @@ namespace Dealer.Окна
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // Установка изображения при загрузке окна
-            DisplaySelectedImage(ImagePath);
+            DisplaySelectedImage(imagePath);
         }
 
         private void DisplaySelectedImage(string imagePath)
@@ -133,7 +133,7 @@ namespace Dealer.Окна
                 Product_Name.Clear();
                 PriceBox.Clear();
                 #endregion
-                DisplaySelectedImage(ImagePath);
+                DisplaySelectedImage(imagePath);
             }
             catch (Exception ex)
             {
