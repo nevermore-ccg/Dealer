@@ -1,0 +1,26 @@
+﻿<Window x:Class="Dealer.Окна.DB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dealer.Окна" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="База данных" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Dealer;component/Resources/Pictures/Logo.png">
+    <Grid >
+        <Image Source="/Dealer;component/Resources/Pictures/background3.png" HorizontalAlignment="Left" Height="571" VerticalAlignment="Top" Width="794" Stretch="Fill" StretchDirection="UpOnly"/>
+        <Label Width="218" VerticalAlignment="Top" Margin="10,39,0,0" Height="75" HorizontalAlignment="Left" FontSize="48" Foreground="Black" Content="Таблица:"/>
+        <DataGrid x:Name="DBGrid"  HorizontalAlignment="Left" Height="344" Margin="10,114,0,0" VerticalAlignment="Top" Width="761" FontSize="16" BorderBrush="#FF2271FB" Background="White">
+            <DataGrid.Columns>
+                <materialDesign:DataGridComboBoxColumn/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="47" Height="55" FontSize="48" Click="Button_GoToPage" BorderBrush="#00000000" Margin="10,491,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Dealer;component/Resources/Pictures/return.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Update_Button"  Content="Сохранить изменения" HorizontalAlignment="Left" Margin="276,492,0,0" VerticalAlignment="Top" Width="280" Height="54" FontSize="18"  Click="Update_Button_Click" Background="#FF2271FB" FontWeight="Bold" BorderBrush="White" FontFamily="Verdana" Foreground="White" />
+        <Button x:Name="Delete_Button" Click="DeleteButton_Click" Content="Удалить строку" HorizontalAlignment="Left" Margin="580,492,0,0" VerticalAlignment="Top" Width="191" Height="55" FontSize="18"  Background="#FF2271FB" FontWeight="Bold" BorderBrush="White" FontFamily="Verdana" Foreground="White" />
+        <ComboBox x:Name="CmbTable" Width="415" VerticalAlignment="Top" RenderTransformOrigin="0.776,0.554" Margin="356,48,0,0" Height="58" HorizontalAlignment="Left" FontSize="36" Foreground="Black" Background="Transparent" BorderBrush="#DD146EF0" SelectionChanged="CmbTable_SelectionChanged"/>
+    </Grid>
+</Window>

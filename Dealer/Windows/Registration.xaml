@@ -1,0 +1,32 @@
+﻿<Window x:Class="Dealer.Окна.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dealer.Окна"
+        mc:Ignorable="d"
+        Title="Регистрация пользователей" Height="600" Width="800" ResizeMode="NoResize" Icon="/Dealer;component/Resources/Pictures/Logo.png" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="/Dealer;component/Resources/Pictures/background2.png" HorizontalAlignment="Left" Height="571" VerticalAlignment="Top" Width="784" Margin="10,0,0,0" Stretch="Fill" StretchDirection="UpOnly"/>
+        <Label Content="Регистрация пользователей" HorizontalAlignment="Left" Margin="216,68,0,0" FontSize="28" Height="62" VerticalAlignment="Top" Width="437" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="176,147,0,0" FontSize="18" Height="33" VerticalAlignment="Top" Width="155" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="176,194,0,0" FontSize="18" Height="33" VerticalAlignment="Top" Width="155" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="176,298,0,0" FontSize="18" Height="33" VerticalAlignment="Top" Width="155" FontFamily="Verdana" Foreground="#FF000001"/>
+        <TextBox x:Name="Last_Name"  MaxLength="50" HorizontalAlignment="Left" Height="33" Margin="362,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" FontSize="20" PreviewTextInput="Letters_PreviewTextInput" FontFamily="Verdana" Foreground="#FF000001"/>
+        <TextBox x:Name="First_Name" MaxLength="50" HorizontalAlignment="Left" Height="33" Margin="362,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" FontSize="20" PreviewTextInput="Letters_PreviewTextInput" FontFamily="Verdana" Foreground="#FF000001"/>
+        <TextBox x:Name="Phone" MaxLength="11" PreviewTextInput="Digit_PreviewTextInput" HorizontalAlignment="Left" Height="33" Margin="362,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" FontSize="20" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Button x:Name="RegistrationButton" Content="Зарегистрировать" HorizontalAlignment="Left" Margin="216,488,0,0" VerticalAlignment="Top" Width="450" Height="64" FontSize="24" Click="Button_Registration" Background="#FF2271FB" FontWeight="Bold" BorderBrush="White" FontFamily="Verdana" Foreground="White"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="176,346,0,0" FontSize="18" Height="47" VerticalAlignment="Top" Width="155" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="176,393,0,0" FontSize="18" Height="33" VerticalAlignment="Top" Width="155" FontFamily="Verdana" Foreground="#FF000001"/>
+        <TextBox x:Name="Login"  MaxLength="15" HorizontalAlignment="Left" Height="33" Margin="362,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" FontSize="20" FontFamily="Verdana" Foreground="#FF000001"/>
+        <TextBox x:Name="Password" MaxLength="20" HorizontalAlignment="Left" Height="33" Margin="362,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" FontSize="20" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Label Content="Компания" HorizontalAlignment="Left" Margin="176,244,0,0" FontSize="18" Height="33" VerticalAlignment="Top" Width="155" FontFamily="Verdana" Foreground="#FF000001"/>
+        <ComboBox x:Name="CmbCompany" DisplayMemberPath="Company1"  SelectedValuePath="Id"  HorizontalAlignment="Left" Margin="362,244,0,0" VerticalAlignment="Top" Width="326" Height="33" BorderBrush="Black" Background="Transparent" FontSize="20" FontFamily="Verdana" Foreground="#FF000001"/>
+        <Button x:Name="GoToPage" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67" Height="65" FontSize="48" Click="GoToPage_Click" BorderBrush="#00000000" Margin="10,487,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Dealer;component/Resources/Pictures/return.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

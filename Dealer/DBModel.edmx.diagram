@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="be7e2e9655db40808525d521c491381b" Name="Diagram1">
+        <EntityTypeShape EntityType="DealerDBModel.Company" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealerDBModel.Order_ACTM" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealerDBModel.PickUpPoint" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealerDBModel.Production_ACTM" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealerDBModel.Role" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealerDBModel.User" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="DealerDBModel.FK__Order_ACT__Compa__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="DealerDBModel.FK__PickUpPoi__Compa__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="DealerDBModel.FK__Users__Company_I__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="DealerDBModel.FK__Order_ACT__ACTM___693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="DealerDBModel.FK__Order_ACT__PickU__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="DealerDBModel.FK__Users__Role_Id__6477ECF3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

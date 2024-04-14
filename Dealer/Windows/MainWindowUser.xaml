@@ -1,0 +1,25 @@
+﻿<Window x:Class="Dealer.Окна.MainWindowUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dealer.Окна" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="Главное меню" Height="800" Width="1200" ResizeMode="NoResize" Icon="/Dealer;component/Resources/Pictures/Logo.png" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,4,-19">
+        <DataGrid x:Name="DBGrid" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True"  HorizontalAlignment="Left" Height="477" Margin="440,61,0,0" VerticalAlignment="Top" Width="750" FontSize="14" BorderBrush="#FF2271FB" SelectionChanged="DBGrid_SelectionChanged" FontFamily="Verdana">
+            <DataGrid.Columns>
+                <materialDesign:DataGridComboBoxColumn/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Image x:Name="Picture" HorizontalAlignment="Left" Height="430" Margin="10,61,0,0" VerticalAlignment="Top" Width="420"/>
+        <Button x:Name="btnOrder" Content="Сделать заказ" HorizontalAlignment="Left" Margin="564,668,0,0" VerticalAlignment="Top" Width="332" Height="60" Click="BtnOrder_Click" Background="#FF2271FB" FontWeight="Bold" BorderBrush="White" FontFamily="Verdana" Foreground="White" FontSize="20"/>
+        <TextBox x:Name="Quantity" MaxLength="3" PreviewTextInput="Digit_PreviewTextInput" HorizontalAlignment="Left" Height="42" Margin="1108,557,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" FontSize="20" RenderTransformOrigin="2.948,-0.182"/>
+        <Label Content="Количество:" HorizontalAlignment="Left" Margin="564,562,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <ComboBox x:Name="CmbPickUpPoint" HorizontalAlignment="Left" Margin="754,604,0,0" VerticalAlignment="Top" Width="412" Height="42"/>
+        <Label Content="Пункт доставки:" HorizontalAlignment="Left" Margin="564,604,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,-0.012"/>
+        <TextBox x:Name="SearchTextBox" HorizontalAlignment="Left" Height="37" Margin="43,670,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278" FontSize="20" FontFamily="Verdana" TextChanged="SearchTextBox_TextChanged" RenderTransformOrigin="0.013,0.365"/>
+        <Image x:Name="Search" Source="/Dealer;component/Resources/Pictures/loupe.png" HorizontalAlignment="Left" Height="50" Margin="339,657,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.18,0.44"/>
+        <Button x:Name="btnAllOrders" Content="Все заказы" HorizontalAlignment="Left" Margin="930,669,0,0" VerticalAlignment="Top" Width="236" Height="60" Click="BtnAllOrders_Click" Background="#FF2271FB" FontWeight="Bold" BorderBrush="White" FontFamily="Verdana" Foreground="White" FontSize="20"/>
+    </Grid>
+</Window>
