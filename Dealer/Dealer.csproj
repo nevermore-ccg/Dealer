@@ -80,31 +80,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Company.cs">
+    <Compile Include="DataBaseFolder\Company.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBModel.Context.cs">
+    <Compile Include="DataBaseFolder\DBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBModel.cs">
+    <Compile Include="DataBaseFolder\DBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBModel.Designer.cs">
+    <Compile Include="DataBaseFolder\DBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DBModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Order_ACTM.cs">
+    <Compile Include="DataBaseFolder\Order_ACTM.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PickUpPoint.cs">
+    <Compile Include="DataBaseFolder\PickUpPoint.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Production_ACTM.cs">
+    <Compile Include="DataBaseFolder\Production_ACTM.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -112,13 +112,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Role.cs">
+    <Compile Include="DataBaseFolder\Role.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="User.cs">
+    <Compile Include="DataBaseFolder\User.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase\DataBase.cs" />
+    <Compile Include="DataBaseFolder\DataBase.cs" />
     <Compile Include="Windows\AddProducts.xaml.cs">
       <DependentUpon>AddProducts.xaml</DependentUpon>
     </Compile>
@@ -194,11 +194,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DBModel.edmx">
+    <EntityDeploy Include="DataBaseFolder\DBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DBModel.edmx.diagram">
+    <None Include="DataBaseFolder\DBModel.edmx.diagram">
       <DependentUpon>DBModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -212,12 +212,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="DBModel.Context.tt">
+    <Content Include="DataBaseFolder\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBModel.edmx</DependentUpon>
       <LastGenOutput>DBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DBModel.tt">
+    <Content Include="DataBaseFolder\DBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBModel.edmx</DependentUpon>
       <LastGenOutput>DBModel.cs</LastGenOutput>

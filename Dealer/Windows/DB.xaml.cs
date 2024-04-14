@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using Dealer.Классы;
+using Dealer.DataBaseFolder;
 
 namespace Dealer.Окна
 {

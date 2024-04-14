@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dealer
+namespace Dealer.DataBaseFolder
 {
     using System;
     using System.Data.Entity;
@@ -26,12 +26,14 @@ namespace Dealer
         {
             throw new UnintentionalCodeFirstException();
         }
+
         public static DealerDBEntities GetContext()
         {
             if (_context == null)
                 _context = new DealerDBEntities();
             return _context;
         }
+
         public virtual DbSet<Company> Companies { get; set; }
         public virtual DbSet<Order_ACTM> Order_ACTM { get; set; }
         public virtual DbSet<PickUpPoint> PickUpPoints { get; set; }

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dealer
+namespace Dealer.DataBaseFolder
 {
     using System;
     using System.Collections.Generic;

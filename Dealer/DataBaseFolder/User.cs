@@ -7,26 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dealer
+namespace Dealer.DataBaseFolder
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Order_ACTM
+    public partial class User
     {
         public int Id { get; set; }
-        public Nullable<int> ACTM_Id { get; set; }
         public Nullable<int> Company_Id { get; set; }
-        public Nullable<int> PickUpPoint_Id { get; set; }
-        public string Status { get; set; }
-        public System.DateTime CreateAt { get; set; }
-        public int Quantity { get; set; }
-        public int Order_Price { get; set; }
-        public Nullable<int> Delivery_Price { get; set; }
-        public Nullable<int> Order_sum { get; set; }
+        public Nullable<int> Role_Id { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Surname { get; set; }
+        public string FirstName { get; set; }
+        public string Phone { get; set; }
     
         public virtual Company Company { get; set; }
-        public virtual Production_ACTM Production_ACTM { get; set; }
-        public virtual PickUpPoint PickUpPoint { get; set; }
+        public virtual Role Role { get; set; }
     }
 }

@@ -16,6 +16,7 @@ using Dealer.Классы;
 using System.Data.SqlClient;
 using System.IO;
 using System.Reflection;
+using Dealer.DataBaseFolder;
 
 namespace Dealer.Окна
 {

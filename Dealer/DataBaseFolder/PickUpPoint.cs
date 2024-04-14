@@ -7,23 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dealer
+namespace Dealer.DataBaseFolder
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class PickUpPoint
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PickUpPoint()
+        {
+            this.Order_ACTM = new HashSet<Order_ACTM>();
+        }
+    
         public int Id { get; set; }
         public Nullable<int> Company_Id { get; set; }
-        public Nullable<int> Role_Id { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public string Surname { get; set; }
-        public string FirstName { get; set; }
-        public string Phone { get; set; }
+        public string Address { get; set; }
     
         public virtual Company Company { get; set; }
-        public virtual Role Role { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Order_ACTM> Order_ACTM { get; set; }
     }
 }
